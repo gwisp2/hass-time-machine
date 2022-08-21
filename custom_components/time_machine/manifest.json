@@ -1,0 +1,15 @@
+{
+    "codeowners": [
+        "@gwisp2"
+    ],
+    "dependencies": [
+        "recorder",
+        "websocket_api"
+    ],
+    "documentation": "https://github.com/gwisp2/hass-time-machine",
+    "domain": "time_machine",
+    "issue_tracker": "https://github.com/gwisp2/hass-time-machine",
+    "name": "TimeMachine",
+    "requirements": [],
+    "version": "1.0.0"
+}

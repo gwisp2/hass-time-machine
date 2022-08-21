@@ -1,0 +1,9 @@
+default_config:
+
+time_machine:
+
+
+input_boolean:
+  hallway_light:
+  room_light:
+  kitchen_light:

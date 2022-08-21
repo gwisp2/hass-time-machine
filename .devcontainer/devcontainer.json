@@ -1,0 +1,15 @@
+{
+    "image": "gwisp2/hass-devcontainer:latest",
+    "postStartCommand": "hactl run",
+    "forwardPorts": [
+        8123
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        // Mount file with additional configuration
+        "source=${localWorkspaceFolder}/.devcontainer/02-custom.yaml,target=/etc/hactl/02-custom.yaml,type=bind",
+        // HA configuration
+        "source=${localWorkspaceFolder}/.devcontainer/configuration.yaml,target=/hdata/configuration.yaml,type=bind"
+    ]
+}
